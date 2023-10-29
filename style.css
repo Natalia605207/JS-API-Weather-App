@@ -1,0 +1,133 @@
+body {
+    background-image: url("back.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    background-color: #0092e8;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-image: linear-gradient(rgba(147, 188, 201, 0.1), rgba(0, 0, 0, 0.4));
+    min-height: 100vh;
+    font-family: 'Georama', sans-serif;
+    color: #FFF;
+}
+
+#header {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#input {
+    background-color: transparent;
+    border-radius: 5px;
+    border: 3px solid #FFF;
+    box-shadow: 0px 0px 3px #000000;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: #FFF;
+    text-shadow: 1px 1px 2px #000000;
+    text-align: center;
+    font-family: 'Georama', sans-serif;
+}
+
+#input:focus {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+::placeholder {
+    color: #FFF;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    color: #FFF;
+}
+
+::-ms-input-placeholder {
+    color: #FFF;
+}
+
+#when-where, #now {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#city {
+    font-size: 45px;
+    font-weight: 600;
+    margin: 50px 0px 10px;
+    text-shadow: 2px 2px 5px #000000;
+}
+
+#date {
+    font-size: 25px;
+    margin-top: 10px;
+    text-shadow: 1px 1px 5px #000000;
+}
+
+#temperature {
+    font-size: 90px;
+    font-weight: 600;
+    margin: 10px 0px;
+    text-shadow: 2px 2px 5px #000000;
+}
+
+#feelsLike {
+    font-size: 25px;
+    font-style: italic;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 5px #000000;
+}
+
+#conditions {
+    font-size: 35px;
+    font-weight: 600;
+    margin:  15px 0px;
+    text-shadow: 2px 2px 5px #000000;
+}
+
+#wind, #humidity, #variation {
+    font-size: 25px;
+    margin: 15px 0px;
+    text-shadow: 1px 1px 5px #000000;
+}
+
+@media all and (max-width: 500px) {
+    #input{
+        width: 60%;
+    }
+
+    #city {
+        font-size: 40px;
+    }
+
+    #date {
+        font-size: 22px;
+    }
+
+    #temperature {
+        font-size: 80px;
+    }
+
+    #conditions {
+        font-size: 25px;
+    }
+
+    #feelsLike, #wind, #humidity, #variation {
+        font-size: 20px;
+    }
+}
+
+
+
+
+
+
+
