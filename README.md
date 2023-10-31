@@ -1,5 +1,8 @@
 <div align="center">
 
+![](./logo.png)
+)
+
 # Weather App
 
 This is a fully-responsive Weather application. Get the weather in any place of the world in a real time.
