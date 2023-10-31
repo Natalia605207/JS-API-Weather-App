@@ -1,7 +1,6 @@
 <div align="center">
 
 ![](./logo.png)
-)
 
 # Weather App
 
