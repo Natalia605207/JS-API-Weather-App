@@ -7,7 +7,7 @@ const input = document.querySelector("#input");
 input.addEventListener("keypress", enter);
 
 function enter(e) {
-    if(e.keyCode === 13) {
+    if(e.key === "Enter") {
         getInfo(input.value);
     }
 }
@@ -15,7 +15,6 @@ function enter(e) {
 async function getInfo (data) {
     const res = await fetch(`${api.endpoint}weather?q=${data}&units=metric&appID=${api.key}`);
     const result = await res.json();
-    console.log(result);
     displayResult(result)
 }
 
@@ -35,7 +34,7 @@ function displayResult(result) {
     conditions.textContent = `${result.weather[0].main}`;
 
     let wind = document.querySelector("#wind");
-    wind.innerHTML = "Wind: " +`${Math.round(result.wind.speed)}` + " " + "km/h";
+    wind.innerHTML = "Wind: " + `${Math.round(result.wind.speed)}` + " " + "km/h";
 
     let humidity = document.querySelector("#humidity");
     humidity.innerHTML = "Humidity: " + `${result.main.humidity}<span>%</span>`;
